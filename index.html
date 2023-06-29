@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <span class="title">Password Generator</span>
+        <div class="password-field">YOUR PASSWORD</div>
+        <span class="length">LENGTH </span>
+        <div class="slider">
+        <input type="range" min="6" max="20" oninput="rangeValue.innerText = this.value" >
+        <p id="rangeValue">13</p>
+        </div>
+        <span class="setting-title">SETTINGS</span>
+        <div class="setting-option">
+            <input type="checkbox" id="uppercase" checked>
+            <label for="uppercase">Include Uppercase</label>
+        </div>
+        <div class="setting-option">
+            <input type="checkbox" id="lowercase" checked>
+            <label for="lowercase">Include Lowercase</label>
+        </div>
+        <div class="setting-option">
+            <input type="checkbox" id="numbers" checked>
+            <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="setting-option">
+            <input type="checkbox" id="characters" checked>
+            <label for="characters">Include Characters</label>
+        </div>
+
+        <button class="generate-password">GENERATE PASSWORD</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

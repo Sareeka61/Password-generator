@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color:rgb(125, 135, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: rgba(36, 43, 87, 0.799);
+    color: white;
+    padding: 35px;
+    border-radius: 20px;
+    max-width: 360px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 35px;
+}
+
+.password-field {
+    background-color: rgb(29,32,65);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.length {
+    font-size: 14px;
+}
+
+.slider {
+    background-color: rgb(29,32,65);
+    width: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.slider input[type="range"] {
+    width: 80%;
+    appearance: none;
+    background-color: transparent;
+}
+
+.slider input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(136,139,171);
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid rgb(136,139,171);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+#rangeValue {
+    font-size: 20px;
+   color: rgb(136,139,171);
+}
+
+.setting-title {
+    font-size: 14px;
+}
+
+.setting-option {
+    background-color: rgb(29,32,65);
+    padding: 20px;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 7px; 
+}
+
+.setting-option input[type="checkbox"] {
+    width: 30px;
+    height: 20px;
+}
+
+.generate-password {
+    margin-top: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    width: 360px;
+    background-color: rgb(8,115,250);
+    color: white;
+    font-size: 18px;
+    font-weight: 600px;
+    cursor: pointer;
+}
